@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+:root{
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+
+--font:"Montserrat", sans-serif;
+--font1:"Fraunces", serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-color: var(--Cream);
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    place-items: center;
+}
+.content{
+    display: flex;
+    
+}
+
+.img-parfume img{
+    /* width:500px; */
+    height: 500px;
+    object-fit:contain;  
+}
+
+.infromation{
+    height: 500px;
+    background-color: var(--White);
+}
+.duxi{
+    font-family: var(--font);
+    color: var(--Dark-grayish-blue);
+    letter-spacing: 5px;
+    font-weight: 400;
+    margin: 15px 0 15px 15px ;
+}
+.infromation h1{
+    width: 200px;
+    font-family: var(--font1);
+    margin: 25px 0 30px 39px;
+}
+.infromation p{
+    width: 300px;
+    font-family: var(--font);
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-left:40px ;
+    color: var(--Dark-grayish-blue);
+}
+
+.span{
+    display: flex;
+    align-items: center;
+}
+.sp1{
+    color: var(--Dark-cyan);
+    font-size: 33px;
+    margin: 25px 0 20px 40px;
+    font-family: var(--font1);
+    font-weight: 700;
+ 
+}
+.sp2{
+    font-size: 13px;
+    margin-left: 20px;
+    color: var(--Dark-grayish-blue);
+    font-family: var(--font);
+    font-weight: 400;
+    text-decoration:line-through;
+  
+}
+.but{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    padding: 15px;
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+    font-family: var(--font);
+    font-weight: 600;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    
+}
+button img{
+    margin-right: 15px;
+    vertical-align: middle;
+    
+}
+button:hover{
+    background-color: var(--Very-dark-blue);
+}
